@@ -6,7 +6,6 @@ body {
 
 * {
   margin: 0;
-  outline: 1px dotted green;
 }
 
 /************
@@ -46,9 +45,14 @@ aside {
 /************
 HEADER
 ************/
-/* Your Styles */
-
-
+.title {
+  grid-column: 2 / span 2;
+  display: inline-block;
+  margin: auto;
+  margin: 2%;
+  text-align: center;
+  font-size: 3rem;
+}
 /************
 MOVIE TRAILER w/ MEDIA ELEMENT PLAYER
 ************/
@@ -173,12 +177,18 @@ main {
   padding-top: 5%;
 }
 
+.imagecrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13vw;
+  height: 13vw;
+  overflow: hidden;
+  border: 5px solid rgb(255,255,255,.3);
+}
 
-
-
-main section > figure > img {
-  width: 14vw;
-  background-color: blue;
+.imagecrop > img {
+  height: 100%;
 }
 
 main section > figure > figcaption {
@@ -209,11 +219,10 @@ text-align: center;
 
 
 .mainimg {
-height: 35vw;
-width: 40%;
-background-color: red;
-    margin: 2%;
-  margin-right: 0;
+height: 30vw;
+width: 45%;
+border: 5px solid rgb(255,255,255,.3);
+  
 }
 
 .subimgs {
@@ -222,15 +231,15 @@ background-color: red;
   flex-wrap: wrap;
   width: 45%;
   height: 100%;
-  padding: 3%;
+  padding-top: 4.5%;
   padding-left: 0;
   box-sizing: border-box;
 }
 
 .subimgs > img {
-  height: 15vw;
-  width: 19vw;
-  background-color: blue;
+  height: 14vw;
+  width: 18vw;
+  border: 5px solid rgb(255,255,255,.3);
   margin: 2.5%;
 }
 
@@ -240,9 +249,18 @@ background-color: red;
 aside {
   display: flex;
   justify-content: space-evenly;
-
+  border-top: 2px solid darkred;
+  padding-top: 1%;
 }
 
+aside a {
+  color: inherit;
+  text-decoration: none;
+}
+
+aside li {
+  margin-top: .5vw;
+}
 
 
 /************
@@ -250,6 +268,7 @@ FOOTER
 ************/
 footer {
   text-align: center;
+  color: rgb(255,255,255,.3)
 }
 
 /************
