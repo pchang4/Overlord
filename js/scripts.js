@@ -19,3 +19,5 @@ console.log('OK');
 */
 
 $('video').mediaelementplayer();
+
+$('.title').lettering();

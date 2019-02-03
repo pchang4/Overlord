@@ -1,8 +1,7 @@
 /*
   DIAGNOSTIC STYLING
 */
-body {
-}
+
 
 * {
   margin: 0;
@@ -26,6 +25,7 @@ body {
   background-color: black;
   color: white;
   font-family: 'Oswald', sans-serif;
+
 }
 
 header,
@@ -41,6 +41,12 @@ aside {
   grid-column: span 5;
 }
 
+/* Font */
+@font-face{
+  font-family: "Blackletter";
+  src: url("/fonts/squealer.ttf")
+}
+
 
 /************
 HEADER
@@ -51,8 +57,15 @@ HEADER
   margin: auto;
   margin: 2%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4vw;
+  font-family: 'Blackletter';
 }
+
+.title > span {
+  letter-spacing: .5vw;
+}
+
+
 /************
 MOVIE TRAILER w/ MEDIA ELEMENT PLAYER
 ************/
@@ -75,14 +88,14 @@ video {
 .mejs__time-current {
   background: red;
 }
-/************
-Main
-************/
+
+/* Main */
+
 main {
   height: 40vw;
 }
 
-/* Tabs */
+/* Tabs Function */
 
 .tabs {
   list-style-type: none;
@@ -133,9 +146,8 @@ main {
 .content1 {
   height: 100%;
   width: 100%;
-  background-image: url(https://www.bleedingcool.com/wp-content/uploads/2018/07/ovl-21069r.jpg?x70969);
-
-    background-size: cover;
+  background-image: url(/img/background-one.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -153,13 +165,11 @@ main {
 }
 
 /* Cast */
-
-
 .content2 {
   height: 100%;
   width: 100%;
-  background-image: url(http://cdn.collider.com/wp-content/uploads/2018/07/overlord-trailer-3.jpg);
-  background-size: cover;
+  background-image: url(/img/background-two.jpg); 
+   background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -201,8 +211,8 @@ text-align: center;
 .content3 {
   height: 100%;
   width: 100%;
-    background-image: url(https://cnet2.cbsistatic.com/img/Krd6JAx6VBrOdvj_q1Q8MEWv1q4=/1600x900/2018/10/25/3fdce9e7-49ed-4ce3-bb6a-d5bcdb612bff/overlord-ovl-ff-052k.jpg);
-    background-size: cover;
+  background-image: url(/img/background-three.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -231,7 +241,7 @@ border: 5px solid rgb(255,255,255,.3);
   flex-wrap: wrap;
   width: 45%;
   height: 100%;
-  padding-top: 4.5%;
+  padding-top: 3.5%;
   padding-left: 0;
   box-sizing: border-box;
 }
@@ -271,14 +281,143 @@ footer {
   color: rgb(255,255,255,.3)
 }
 
+
+/***********************
+Mobile Version
+800px or smaller 
+***********************/
+
+
+.mobile {
+  display: none;
+}
+
+.content1 {
+  height: 40vw;
+  width: 100%;
+  background-image: url(/img/background-one.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blocksynopsis {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0,0,0,.3);
+  width: 46%;
+  height: 100%;
+  color: white;
+  box-sizing: border-box;
+  padding: 10%;
+  font-size: 1.2vw;
+  line-height: 1.7;
+}
+
+
+.content2 {
+  height: 40vw;
+  width: 100%;
+  background-image: url(/img/background-two.jpg); 
+   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.blockcast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(0,0,0,.7);
+  width: 46%;
+  height: 100%;
+  color: white;
+  box-sizing: border-box;
+  padding: 2%;
+  padding-top: 5%;
+}
+
+.imagecrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13vw;
+  height: 13vw;
+  overflow: hidden;
+  border: 5px solid rgb(255,255,255,.3);
+}
+
+.imagecrop > img {
+  height: 100%;
+}
+
+.mobile section > figure > figcaption {
+text-align: center;
+font-size: 2vw;
+
+}
+
+
+.content3 {
+  height: 40vw;
+  width: 100%;
+  background-image: url(/img/background-three.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.blockgallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(0,0,0,.6);
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+
+.mainimg {
+height: 30vw;
+width: 45%;
+border: 5px solid rgb(255,255,255,.3);
+  
+}
+
+.subimgs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 45%;
+  height: 100%;
+  padding-top: 3.5%;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+
+.subimgs > img {
+  height: 12vw;
+  width: 16vw;
+  border: 5px solid rgb(255,255,255,.3);
+  margin: 2.5%;
+}
+
+
 /************
 RWD
 ************/
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+  main {
+    display: none;
+  }
 
+  .mobile {
+    display: block;
+  }
   main,
-  aside {
+  aside,.mobile {
     grid-column: 1 / span 5;
   }
   
 }
+
