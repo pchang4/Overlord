@@ -31,59 +31,44 @@
 
 <!-- Header -->
     <header>
-        <h1>Movie Title</h1>
-        <h5>A Very Well Written Clever Slogan for A Subpar Movie</h5>
+        <video width="70vw" height="40vw"  poster="https://www.geeky-gadgets.com/wp-content/uploads/2018/11/Overlord-movie-2018.jpg">
+            <source src="http://vcd.github.io/cdn/378/trailer.mp4"/>
+            <source src="http://vcd.github.io/cdn/378/trailer.webm" />
+          </video>
+          
     </header>
 
 <!-- Main -->
     <main>
-    
-<!-- Trailer -->    
-    <video controls>
-        <source src="video/trailer.mp4">
-        <source src="video/trailer.webm">
-    </video>
-
-<!-- Actors -->    
-        <section>
-
-            <figure>
-                <img src="http://placehold.it/100x100" alt="Actor">
-                <figcaption>
-                    Name of Actor
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="http://placehold.it/100x100" alt="Actor">
-                <figcaption>
-                    Name of Actor
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="http://placehold.it/100x100" alt="Actor">
-                <figcaption>
-                    Name of Actor
-                </figcaption>
-            </figure>
-            
-            <figure>
-                <img src="http://placehold.it/100x100" alt="Actor">
-                <figcaption>
-                    Name of Actor
-                </figcaption>
-            </figure>
-            
-            <figure>
-                <img src="http://placehold.it/100x100" alt="Actor">
-                <figcaption>
-                    Name of Actor
-                </figcaption>
-            </figure>
-
-        </section>
-      
+        <ul class="tabs">
+            <li>
+              <input type="radio" name="tabs" id="tab-1" checked>
+              <label for="tab-1">First</label>
+              <div class="tab-content">
+                <div class="content1">
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum nemo, optio minima mollitia in? Veniam sit recusandae accusantium vel nulla, velit, molestiae id optio hic tenetur repellat. Assumenda, unde? </p>
+                  
+                </div>
+            </li>
+              
+               <li>
+              <input type="radio" name="tabs" id="tab-2">
+              <label for="tab-2">Second</label>
+              <div class="tab-content">
+                <div class="content2">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum nemo, optio minima mollitia in? Veniam sit recusandae accusantium vel nulla, velit, molestiae id optio hic tenetur repellat. Assumenda, unde? Lorem</p>
+                </div>
+            </li>
+                 
+                  <li>
+              <input type="radio" name="tabs" id="tab-3">
+              <label for="tab-3">Third</label>
+              <div class="tab-content">
+                <div class="content3">
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum nemo, optio minima mollitia in? Veniam sit recusandae accusantium vel nulla, velit, molestiae id optio hic tenetur repellat. Assumenda, unde? </p>
+                </div>
+            </li>
+          </ul>
     </main>
 
 <!-- Aside -->
