@@ -323,10 +323,6 @@ font-size: 2vw;
   width: 100%;
 }
 
-.mobile > .subimgs > img {
-  height: 12vw;
-  width: 16vw;
-}
 
 /************
 RWD
@@ -339,10 +335,15 @@ RWD
   .mobile {
     display: block;
   }
+  
   main,
   aside,.mobile {
     grid-column: 1 / span 5;
   }
   
+  .subimgs > img {
+  height: 12vw;
+  width: 16vw;
+}
 }
 
