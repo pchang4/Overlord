@@ -44,8 +44,8 @@ aside {
 /* Font */
 @font-face{
   font-family: blackletter;
-  src: url(/fonts/Squealer-Regular.woff) format('woff');
-  src: url(/fonts/Squealer-Regular.woff2) format('woff2');
+  src: url(../fonts/Squealer-Regular.woff) format('woff');
+  src: url(../fonts/Squealer-Regular.woff2) format('woff2');
 }
 
 
@@ -147,7 +147,7 @@ main {
 .content1 {
   height: 100%;
   width: 100%;
-  background-image: url("/img/background_one.jpg");
+  background-image: url("../img/background_one.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -169,7 +169,7 @@ main {
 .content2 {
   height: 100%;
   width: 100%;
-  background-image: url("/img/background_two.jpg"); 
+  background-image: url("../img/background_two.jpg"); 
    background-size: cover;
   background-repeat: no-repeat;
 }
@@ -212,7 +212,7 @@ text-align: center;
 .content3 {
   height: 100%;
   width: 100%;
-  background-image: url("/img/background_three.jpg");
+  background-image: url("../img/background_three.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
