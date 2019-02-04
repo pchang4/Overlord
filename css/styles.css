@@ -146,7 +146,7 @@ main {
 .content1 {
   height: 100%;
   width: 100%;
-  background-image: url(/img/background-one.jpg);
+  background-image: url("/img/background-one.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -168,7 +168,7 @@ main {
 .content2 {
   height: 100%;
   width: 100%;
-  background-image: url(/img/background-two.jpg); 
+  background-image: url("/img/background-two.jpg"); 
    background-size: cover;
   background-repeat: no-repeat;
 }
@@ -211,7 +211,7 @@ text-align: center;
 .content3 {
   height: 100%;
   width: 100%;
-  background-image: url(/img/background-three.jpg);
+  background-image: url("/img/background-three.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -295,7 +295,7 @@ Mobile Version
 .content1 {
   height: 40vw;
   width: 100%;
-  background-image: url(/img/background-one.jpg);
+  background-image: url("/img/background-one.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -317,7 +317,7 @@ Mobile Version
 .content2 {
   height: 40vw;
   width: 100%;
-  background-image: url(/img/background-two.jpg); 
+  background-image: url("/img/background-two.jpg"); 
    background-size: cover;
   background-repeat: no-repeat;
 }
@@ -360,7 +360,7 @@ font-size: 2vw;
 .content3 {
   height: 40vw;
   width: 100%;
-  background-image: url(/img/background-three.jpg);
+  background-image: url("/img/background-three.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
