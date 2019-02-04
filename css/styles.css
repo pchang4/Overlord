@@ -43,8 +43,9 @@ aside {
 
 /* Font */
 @font-face{
-  font-family: "Blackletter";
-  src: url("/fonts/squealer.ttf") format("ttf");
+  font-family: "blackletter";
+  src: url(/fonts/Squealer-Regular.woff) format("woff");
+  src: url(/fonts/Squealer-Regular.woff2) format("woff2");
 }
 
 
@@ -58,7 +59,7 @@ HEADER
   margin: 2%;
   text-align: center;
   font-size: 4vw;
-  font-family: 'Blackletter';
+  font-family: 'blackletter';
 }
 
 .title > span {
