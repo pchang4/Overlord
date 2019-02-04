@@ -44,7 +44,7 @@ aside {
 /* Font */
 @font-face{
   font-family: "Blackletter";
-  src: url("/fonts/squealer.ttf")
+  src: url("/fonts/squealer.ttf") format("ttf");
 }
 
 
