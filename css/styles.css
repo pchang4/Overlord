@@ -44,8 +44,8 @@ aside {
 /* Font */
 @font-face{
   font-family: blackletter;
-  src: url(/fonts/Squealer-Regular.woff) format("woff");
-  src: url(/fonts/Squealer-Regular.woff2) format("woff2");
+  src: url(/fonts/Squealer-Regular.woff) format('woff');
+  src: url(/fonts/Squealer-Regular.woff2) format('woff2');
 }
 
 
