@@ -147,7 +147,7 @@ main {
 .content1 {
   height: 100%;
   width: 100%;
-  background-image: url("../img/background_one.jpg");
+  background-image: url(../img/background_one.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
