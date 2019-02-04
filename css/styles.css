@@ -323,6 +323,10 @@ font-size: 2vw;
   width: 100%;
 }
 
+.mobile > .subimgs > img {
+  height: 12vw;
+  width: 16vw;
+}
 
 /************
 RWD
